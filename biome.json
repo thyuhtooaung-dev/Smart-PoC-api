@@ -20,10 +20,16 @@
       "preset": "recommended",
       "style": {
         "useImportType": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off"
       }
     }
   },
   "javascript": {
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    },
     "formatter": {
       "quoteStyle": "single",
       "trailingCommas": "all"
