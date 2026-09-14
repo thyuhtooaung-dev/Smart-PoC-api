@@ -12,7 +12,7 @@ async function bootstrap() {
   // override default in-memory adapter with our redis adapter
   app.useWebSocketAdapter(redisIoAdapter);
 
-  const port = process.env.PORT ?? 3000;
+  const port = process.env.PORT ?? 8080;
   await app.listen(port);
 }
 await bootstrap();
